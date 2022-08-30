@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'ashis-fastapi-app-demo'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_9859D45E0BEF4C30A087FEB1CB5FFAA8 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_B01A8CD2FD0F49869BBE40C44D86EEA4 }}
