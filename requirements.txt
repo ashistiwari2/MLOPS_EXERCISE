@@ -8,3 +8,4 @@ urllib3
 psycopg2
 uvloop
 httptools
+psycopg2-binary
