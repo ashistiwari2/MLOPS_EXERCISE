@@ -5,7 +5,6 @@ sqlalchemy
 uvicorn
 pydantic
 urllib3
-os
 psycopg2
 uvloop
 httptools
