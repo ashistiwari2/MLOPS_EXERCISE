@@ -4,7 +4,7 @@ pandas
 sqlalchemy
 uvicorn
 pydantic
-urllib
+urllib3
 os
 psycopg2
 uvloop
