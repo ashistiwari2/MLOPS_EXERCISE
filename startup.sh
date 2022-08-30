@@ -1,1 +1,1 @@
-uvicorn Logistic_api.main:app --reload --port 8008
+uvicorn.workers.UvicornWorker Logistic_api.main:app 
