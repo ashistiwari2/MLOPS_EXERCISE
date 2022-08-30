@@ -4,3 +4,8 @@ pandas
 sqlalchemy
 uvicorn
 pydantic
+urllib
+os
+psycopg2
+uvloop
+httptools
