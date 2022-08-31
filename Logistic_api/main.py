@@ -10,7 +10,7 @@ file_csv=pd.read_csv("Logistic_api/Fish.csv")
 x=file_csv.iloc[:,1:].values
 y=file_csv.iloc[:,0:-6].values
 app=FastAPI(
-    title="Logistic ML API With Connection to Database",
+    title="Logistic ML API With Connection to postgresql Database",
 description="To determine Species of Fish given all the parameters"
 )
 model.Base.metadata.create_all(engine)
@@ -22,6 +22,10 @@ def get_db():
         yield db
     finally:
         db.close()
+app.get('/')
+def welcome():
+    return {f'Home page of fastapi and i have connected with azure  postgresql database '}
+
 @app.get('/predictions')
 def prediction_table(db:Session=Depends(get_db)):
     predicted=db.query(model.logistic_api).all()
