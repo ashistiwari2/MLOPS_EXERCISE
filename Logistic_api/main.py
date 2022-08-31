@@ -22,7 +22,7 @@ def get_db():
         yield db
     finally:
         db.close()
-app.get('/')
+@app.get('/')
 def welcome():
     return {f'Home page of fastapi and i have connected with azure  postgresql database '}
 
