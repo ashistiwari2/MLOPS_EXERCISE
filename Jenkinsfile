@@ -1,5 +1,3 @@
-nes (36 sloc)  1018 Bytes
-
 pipeline {
     agent any
         stages {
