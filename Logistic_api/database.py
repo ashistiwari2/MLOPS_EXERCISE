@@ -12,7 +12,7 @@ SQLALCHEMY_DATABASE_URL = "sqlite:///./logistic.db"
 # db_password = urllib.parse.quote_plus(str(os.environ.get('db_password', 'secret')))
 #ssl_mode = urllib.parse.quote_plus(str(os.environ.get('ssl_mode','prefer')))
 #SQLALCHEMY_DATABASE_URL = 'postgresql://{}:{}@{}:{}/{}?sslmode={}'.format(db_username, db_password, host_server, db_server_port, database_name, ssl_mode)
-SQLALCHEMY_DATABASE_URL = "postgresql://{}:{}@{}/{}".format(db_username, db_password, host_server,database_name)
+#SQLALCHEMY_DATABASE_URL = "postgresql://{}:{}@{}/{}".format(db_username, db_password, host_server,database_name)
 
 engine = create_engine(
     SQLALCHEMY_DATABASE_URL,connect_args={"check_same_thread": False}
