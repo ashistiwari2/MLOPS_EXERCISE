@@ -69,3 +69,5 @@ async def add(request:schema.logistic,db:Session=Depends(get_db)):
     db.commit()
     db.refresh(new_logistic_api)
     return request
+if __name__ == '__main__':
+    uvicorn.run("main:app", host="127.0.0.1", port=8090)
